@@ -12,14 +12,14 @@
 </div>
 
 <blockquote>
-<p align="left">You know, there is no such thing as a 
-&quot;functional family&quot;.&nbsp; All families are screwed up.&nbsp; Some in big ways, 
-some in small, but be assured that it's not just your family that has skeletons 
-in the closet and black sheep that no one talks about.&nbsp; All families are 
+<p align="left">You know, there is no such thing as a
+&quot;functional family&quot;.&nbsp; All families are screwed up.&nbsp; Some in big ways,
+some in small, but be assured that it's not just your family that has skeletons
+in the closet and black sheep that no one talks about.&nbsp; All families are
 screwed up.&nbsp; </p>
 <p align="left">So you might as well have some fun with it!</p>
-<p align="left">Welcome to &quot;<b>Crazy Relatives Bingo!</b>&quot; - 
-zthe game that can turn every tedious reunion, get-together, wedding, Bar 
+<p align="left">Welcome to &quot;<b>Crazy Relatives Bingo!</b>&quot; -
+the game that can turn every tedious reunion, get-together, wedding, Bar
 Mitzvah, whatever into hours of wicked fun! All you need to do is print out a new page for each player. Check off boxes as you see bad behavior - 5 in a row wins! </p>
 </blockquote>
 <div align="center">
@@ -39,7 +39,7 @@ Mitzvah, whatever into hours of wicked fun! All you need to do is print out a ne
 			  </tr></table>
 		    </td>
 </tr>
-<?php 
+<?php
 include('counter.php');
 
 /*
@@ -47,6 +47,8 @@ include('counter.php');
  */
 $mPs[] = "Dad";
 $mPs[] = "Grampie";
+$mPs[] = "your Grandfather";
+$mPs[] = "your boss";
 $mPs[] = "your uncle";
 $mPs[] = "Uncle <MN>";
 $mPs[] = "your brother";
@@ -61,6 +63,7 @@ $mPs[] = "your best friend";
 $mPs[] = "your best friend, <MN>,";
 $mPs[] = "your best friend's husband";
 $mPs[] = "your Best Man";
+$mPs[] = "your ex";
 $mPs[] = "your college roommate";
 $mPs[] = "Weird Uncle <MN>";
 $mPs[] = "<MN>";
@@ -82,6 +85,11 @@ $mNames[] = "Rodney";
 $mNames[] = "Nathan";
 $mNames[] = "Bernie";
 $mNames[] = "Danny";
+$mNames[] = "Alfonso";
+$mNames[] = "Quincy";
+$mNames[] = "Ricardo";
+$mNames[] = "Holger";
+
 
 /*
  * Female Names
@@ -98,6 +106,9 @@ $fNames[] = "Rebecca";
 $fNames[] = "Dagmara";
 $fNames[] = "Trudy";
 $fNames[] = "Helen";
+$fNames[] = "Brittany";
+$fNames[] = "Beatrice";
+
 
 /*
  * Female Pronouns
@@ -118,6 +129,8 @@ $fPs[] = "your college roommate";
 $fPs[] = "your cousin";
 $fPs[] = "your best friend's wife";
 $fPs[] = "your mother-in-law";
+$fPs[] = "your boss";
+$fPs[] = "your ex";
 $fPs[] = "<FN>";
 
 /*
@@ -130,7 +143,8 @@ $cPs[] = "Uncle <MN> and Aunt <FN>";
 $cPs[] = "your Uncle and Aunt";
 $cPs[] = "your brother- and sister-in-law";
 $cPs[] = "your best friend and his wife";
-$cPs[] = "your sisters";
+$cPs[] = "your boss and her husband";
+$cPs[] = "your boss and his wife";
 $cPs[] = "your in-laws";
 
 /*
@@ -138,6 +152,7 @@ $cPs[] = "your in-laws";
  */
 $nrcs[] = "your cousins";
 $nrcs[] = "your brothers";
+$nrcs[] = "your sisters";
 $nrcs[] = "your sisters";
 
 /*
@@ -153,7 +168,17 @@ $topics[] = "differing religion";
 $topics[] = "opposing sports teams";
 $topics[] = "global warming";
 $topics[] = "Hillary";
-$topics[] = "Bush";
+$topics[] = "Trump";
+$topics[] = "Biden";
+$topics[] = "QAnon";
+$topics[] = "abortion rights";
+$topics[] = "the Jan 6th insurrection";
+$topics[] = "MAGA";
+$topics[] = "Obama";
+$topics[] = "the election";
+$topics[] = "climate change";
+$topics[] = "electric vehicles";
+$topics[] = "the surveillance state";
 
 
 require('read_data.php');
@@ -187,27 +212,26 @@ for ($i=0; $i < 5; $i++) {
 <p align="left"><b>Rules:</b></p>
 <ol>
 	<li>
-	<p align="left">Each player prints out a unique card.&nbsp; 
-	Each time you witness some atrocious behavior that matches a square entry, 
-	cross that square out.&nbsp; The first player to get five squares in a row 
-	(horizontally, vertically, or diagonally) cries out &quot;BINGO!&quot; and is declared 
+	<p align="left">Each player prints out a unique card.&nbsp;
+	Each time you witness some atrocious behavior that matches a square entry,
+	cross that square out.&nbsp; The first player to get five squares in a row
+	(horizontally, vertically, or diagonally) cries out &quot;BINGO!&quot; and is declared
 	the winner!&nbsp; Nothing could be easier, right?</li>
 <li>
 	If you get a <b>Bonus</b> square, you may take an additional square as well!
-</li>	
+</li>
 <li>
-	<p align="left">Our pronouns are generic.&nbsp; When we 
-	say &quot;Uncle Bob&quot; it doesn't have to be a literal &quot;Uncle Bob&quot; - it could be 
+	<p align="left">Our pronouns are generic.&nbsp; When we
+	say &quot;Uncle Bob&quot; it doesn't have to be a literal &quot;Uncle Bob&quot; - it could be
 	&quot;Cousin Joe&quot;, &quot;Dad&quot;, or even lovable old &quot;Grampie&quot;.</li>
 	<li>
-	<p align="left">This is honor-system based, but 
-	if you are able to collect photographic evidence, you can use that as a <b>BONUS</b> square and 
+	<p align="left">This is honor-system based, but
+	if you are able to collect photographic evidence, you can use that as a <b>BONUS</b> square and
 	take any extra square of your choice!</li>
 </ol>
 
-Do you have your own stories that you think would fit in great here?  Either sign our 
-<a href="gbook/index.htm"><strong>Guestbook</strong></a> or send them to 
-<a href="mailto:crazy@crazyrelativesbingo.com">Crazy -AT- CrazyRelativesBingo -DOT- COM</a>!  We'd love to hear from you and will put them in the mix!
+Do you have your own stories that you think would fit in great here?  Send them to
+<a href="mailto:bebopdaddy@gmail.com">BebopDaddy@gmail.com</a>!  We'd love to hear from you and will put them in the mix!
 </blockquote>
 <table class="blank" width="100%">
   <tr>
